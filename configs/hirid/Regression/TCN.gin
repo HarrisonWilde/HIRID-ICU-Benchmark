@@ -22,7 +22,7 @@ LOSS_WEIGHT = None
 # Train params
 train_common.model = @DLWrapper()
 train_common.dataset_fn = @ICUVariableLengthDataset
-train_common.data_path = PATH_TO_DL # TODO(User) update this
+train_common.data_path = '/data/harry/hirid/ml_stage/ml_stage_12h.h5'
 train_common.do_test = True
 
 

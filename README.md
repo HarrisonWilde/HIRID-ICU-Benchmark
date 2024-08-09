@@ -85,11 +85,11 @@ In the following we assume a Linux installation, however, other platforms may al
 Activate the conda environment using `conda activate icu-benchmark`. Then
 
 ```
-icu-benchmarks preprocess --hirid-data-root [path to unpacked parquet files as downloaded from phyiosnet] \
-                          --work-dir [output directory] \
+icu-benchmarks preprocess --hirid-data-root /data/hirid/1.1.1/harry/ \
+                          --work-dir /data/harry/hirid \
                           --var-ref-path ./preprocessing/resources/varref.tsv \
                           --split-path ./preprocessing/resources/split.tsv \
-                          --nr-workers 8
+                          --nr-workers 4
 ```
 
 The above command requires about 16GB of RAM per core and in total approximately 30GB of disk space. We are currently working on reducing the memory required per worker.
